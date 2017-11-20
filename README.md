@@ -130,11 +130,11 @@ Now lets process the report that we compile before:
 
 ```python
 import os
-import pyjasper
+from pyjasper import jasperpy
 
 def processing():
     input_file = os.path.dirname(os.path.abspath(__file__)) + \
-                 '/examples/hello_world.jrxml'
+                 '/examples/hello_world.jasper'
     output = os.path.dirname(os.path.abspath(__file__)) + '/output/examples'
     jasper = pyjasper.JasperPy()
     jasper.process(
